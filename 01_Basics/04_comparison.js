@@ -4,6 +4,7 @@
 // console.log(2 == 1);
 // console.log(2 != 1);
 
+// Bad practice of comparing with diff datatypes (not allowed in TS and core JAVA)
 
 // console.log("2" > 1);
 // console.log("02" > 1);
