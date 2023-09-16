@@ -70,7 +70,8 @@ console.log(myname.charAt(5));
 // trimStart: ƒ trimStart()
 // valueOf: ƒ valueOf()
 // Symbol(Symbol.iterator): ƒ [Symbol.iterator]()
-
+console.log(gameName.toUpperCase());
+console.log(gameName);
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
