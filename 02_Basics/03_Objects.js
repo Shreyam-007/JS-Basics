@@ -1,5 +1,5 @@
 // Singleton object (made from constructor)
-// Object.create
+// const tinderUser = new Object();
 
 // non singleton object ( made from literals):-
 const mySym = Symbol("key1");
@@ -12,7 +12,7 @@ const JS_user = {
   email: "shreyam@yahoo.com",
   location: "Vijyawada",
   isLoggedIn: false,
-  lastLoginDays: ["Monday", "Saturday"]
+  lastLoginDays: ["Monday", "Saturday"],
 };
 
 console.log(JS_user.lastLoginDays);
@@ -25,12 +25,14 @@ JS_user.email = "shreyam@chatgpt.com";
 // JS_user.email = "shreyam@yoyoy.com";
 // console.log(JS_user);
 
-JS_user.greeting = function(){
-    console.log("Hemlo JS User");
-}
-JS_user.greetingTwo = function(){
-    console.log(`Hemlo JS User, ${this["Full name"]}`);
-}
+JS_user.greeting = function () {
+  console.log("Hemlo JS User");
+};
+
+JS_user.greetingTwo = function () {
+  console.log(`Hemlo JS User, ${this["Full name"]}`);
+};
+
 console.log(JS_user);
 console.log(JS_user.greeting);
 console.log(JS_user.greeting());
