@@ -84,3 +84,9 @@ console.log(newDate.getDay());
 newDate.toLocaleString("default",{
     weekday : "long"
 })
+
+console.log(new Date(2023,0,21,5,40,56,4).toString());
+console.log((new Date(2023,0,21,5,40,56,4)).getTime());
+console.log(Date.UTC());
+console.log(Date.now());
+console.log(Date.parse());
