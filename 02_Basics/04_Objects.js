@@ -86,3 +86,40 @@ console.log(tinderUser.hasOwnProperty("isLogged"));
 // Object.prototype.toString()
 // Object.prototype.valueOf()
 // Object.values()
+
+// object De-structuring :-
+
+const course = {
+    coursename: "JS",
+    price: "999",
+    courseInstructor: "Shreyam Singh"
+}
+
+// course.courseInstructor or course["courseInstructure"]
+
+const {courseInstructor: Instructor,price} = course
+// console.log(courseInstructor);
+console.log(Instructor);
+console.log(price);
+
+// use in react :-
+// const navbar = ({props}) => {
+
+// }
+
+// navbar(company = "shreyam")
+
+// JSON when API calls 
+// {
+//     "name" : "Shreyam",
+//     "coursename" : "JS",
+//     "price" : 4500,
+//     "site_admin" : false
+// }
+
+// API in Array format
+[
+    {},
+    {},
+    {}
+]
