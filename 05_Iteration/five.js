@@ -1,18 +1,18 @@
 const coding = ["Ruby", "Python", "Java", "C++"];
 
-// coding.forEach(function (item) {    //no name req in callbackfn
-//   console.log(item);
-// });
+coding.forEach(function (item) {    //no name req in callbackfn
+  console.log(item);
+});
 
-// coding.forEach((val) => {
-//   console.log(val);
-// });
+coding.forEach((val) => {
+  console.log(val);
+});
 
-// function printMe (val) {
-//     console.log(val);
-// }
+function printMe (val) {
+    console.log(val);
+}
+coding.forEach(printMe)
 
-// coding.forEach(printMe)
 
 coding.forEach((item, index, arr) => {
     console.log(item, index, arr);
