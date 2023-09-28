@@ -19,7 +19,7 @@ coding.forEach((item, index, arr) => {
 })
 
 
-// [{}, {}, {}]
+// [{}, {}, {}] array of objects 
 const myCoding = [
     {
         languageName : "JavaScript",
