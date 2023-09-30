@@ -3,7 +3,7 @@ Project link is here
 
 [Click Here]()
 
-## Solution 1
+## Project 1 
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
@@ -32,4 +32,68 @@ buttons.forEach(function (button) {
     }
   });
 });
+```
+## Project 5
+
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>KeyCode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'Space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+  `;
+});
+```
+
+## Project 6
+
+```javascript
+// document.querySelector('#start').addEventListener('click', function () {
+//   const setColor = setInterval(function () {
+//     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+//     document.body.style.backgroundColor = '#' + randomColor;
+
+//     document.querySelector('#stop').addEventListener('click', function () {
+//       clearInterval(setColor);
+//     });
+//   }, 1000);
+// });
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+let Interval;
+
+document.querySelector('#start').addEventListener('click', function () {
+  const colorChanged = function () {
+    document.body.style.backgroundColor = randomColor();
+  };
+  if (!Interval) {
+    Interval = setInterval(colorChanged, 1000);
+  }
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+  clearInterval(Interval);
+  Interval = null;
+});
+
+// console.log(randomColor());
 ```
