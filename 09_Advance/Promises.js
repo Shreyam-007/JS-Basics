@@ -71,7 +71,7 @@ const promiseFive = new Promise(function(resolve,reject){
 })
 
 async function consumePromiseFive (){ //most use in DB connection
-    try {                        //must use try catch for error handling
+    try {                        //must use try catch for error handling here
         const response = await promiseFive
         console.log(response);
     } catch (error) {
