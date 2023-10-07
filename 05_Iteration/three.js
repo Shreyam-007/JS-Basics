@@ -49,3 +49,8 @@ for (const [keys, values] of myObject) { //myObject is not iterable by for of
     console.log(`${keys} and values are ${values}`);
 }
 
+
+for (const [keys, values] of Object.entries(myObject)) { //myObject is now iterable by for of
+    console.log(`${keys} and values are ${values}`);
+}
+
